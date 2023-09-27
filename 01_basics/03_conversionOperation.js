@@ -19,5 +19,30 @@ let isBoolean = Boolean(isLogedIn);
 
 let num = 33;
 let string = String(num);
-console.log(string);
-console.log(typeof string);
+// console.log(string);
+// console.log(typeof string);
+
+
+/******** Operation **********/
+
+let val = 3
+let negVal = -val;
+// console.log(negVal);
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/2);
+// console.log(2%2);
+
+let n1 = "Vinay";
+let n2 = " Singh";
+let name = n1 + n2;
+// console.log(name);
+
+console.log(1 + "2");
+console.log("1" + 2);
+console.log("1" + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+console.log((3+4) * 5 % 3);
