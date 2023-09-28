@@ -1,7 +1,7 @@
 // Premitive Type -> call by value
 // types 7 -> String, Number, Boolean, null , undefined , bigInt, Symbol 
 
-let name = "Vinay";
+// let name = "Vinay";
 const num = 123;
 const isBoolean = true;
 const n1 = null;
@@ -19,15 +19,39 @@ const userId = Symbol(123);
 // Array, Object, Functions
 
 let arr = ["1" , "2", "3"];
-console.log(arr);
+// console.log(arr);
 
 let obj = {
     name: "Vinay",
     age: 22
 }
-console.log(obj);
+// console.log(obj);
 
 let fun = function() {
     console.log("Hello World");
 }
-console.log(typeof fun);
+// console.log(typeof fun);
+
+// +++++++++++++++++++++ Memory ++++++++++++++++++++++++++++++++++
+// 2 types of memory
+// Stack => (Premitive type of value) esme original value copy hoti hai aur esme hm original value ko change nhi kr skte hai
+// Heap => (Non-Premitive type of value) esme reference copy hota hai jisase hm original value change kr skte hai
+
+let name = "Vinay" ;
+let myName = "Nitin";
+console.log(name);
+console.log(myName);
+
+let myObj = {
+    name: "Vinay",
+    age:22,
+}
+
+
+let nObj = myObj;
+nObj.name = "Nitin";
+nObj.age = 21;
+console.log(nObj);
+console.log(myObj);
+
+
